@@ -1,0 +1,896 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 14px;
+    --navbarlien: BLACK;
+    --fondnavbar: #FBCDCD;
+    --barreburger: rgb(0, 0, 0);
+    --fondtitre: rgb(32, 90, 216);
+    --fondbody: #F6F1F1;
+    --fondpresentation: rgba(255, 255, 255, 0.842);
+    --boxshadow: rgb(0, 0, 0);
+    --footer: rgb(0, 0, 0);
+    --navtitremob: BLACK;
+    --fondnavmob: #FBCDCD;
+    --couleurbouton: rgba(130, 130, 233, 0.719);
+    --menuburger: rgb(235, 235, 235);
+    --menunavigation: rgb(248, 248, 172);
+    --navig: white;
+    --boxhotel: rgb(248, 248, 172);
+    --fondhotel: white;
+    --fonddescriphotel: rgba(223, 223, 223, 0.295);
+    --desciphotel: rgb(0, 0, 0);
+}
+
+/* BURGER */
+body {
+    margin: 0;
+    background-color: var(--fondbody);
+    overflow-x: hidden;
+    text-align: center;
+    animation: spin 5s linear infinite;
+}
+body{
+    animation: none;
+}
+
+.navbar {
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--fondnavbar);
+    align-items: center;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    position: relative;
+    justify-content: center;
+}
+
+.navbar-links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 3.4rem;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    border-color: transparent;
+    border-style: solid;
+    border-top: none;
+    color: var(--navbarlien);
+    background-color: var(--menuburger);
+    width: 0;
+    z-index: 1;
+    transition: all .8s ease-in-out;
+    padding: 0;
+    overflow: hidden;
+    text-align: center;
+}
+
+.show-nav .navbar-links {
+    width: 100%;
+    border-bottom-right-radius: 30%;
+    border-bottom-left-radius: 30%;
+    border-style: solid;
+    border-color: black;
+    border-top: none;
+    right: 0;
+}
+
+.navbar-link a {
+    display: block;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: var(--navbarlien);
+    border-style: solid;
+    border-radius: 20%;
+    border-width: 1px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background-color: var(--fondpresentation);
+
+}
+
+.burger {
+    display: block;
+    padding: 0;
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.barre {
+    position: relative;
+    display: block;
+    width: 45px;
+    height: 4px;
+    background-color: var(--barreburger);
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+
+.barre::before,
+.barre::after {
+    content: "";
+    width: 45px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    background-color: var(--barreburger);
+    ;
+    border-radius: 3px;
+    transition: all .5s ease-in-out;
+}
+
+.barre::before {
+    transform: translateY(-12px);
+
+}
+
+.show-nav .barre::before {
+    transform: rotate(45deg);
+}
+
+.barre::after {
+    transform: translateY(12px);
+
+}
+
+.show-nav .barre::after {
+    transform: rotate(-45deg);
+}
+
+.show-nav .barre {
+    background-color: transparent;
+}
+
+.navbar-titre {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.logo {
+    margin: 5px;
+    width: 3rem;
+    animation: spin 5s linear infinite;
+}
+.logo{
+    animation: none;
+}
+@keyframes spin {
+    100% {
+        transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+/* fin burger */
+.destination {
+    text-align: center;
+    width: 100%;
+
+}
+
+.menurecherche {
+    border-style: solid;
+    border-width: 1px;
+    background-color: var(--menunavigation);
+    margin: 10px;
+
+}
+
+.barrerecherchedestination {
+    width: 100%;
+    position: relative;
+    top: 5px;
+    text-align: center;
+    margin: 10px 5px;
+}
+
+.choix {
+    border: none;
+    text-align: center;
+}
+
+#recherche {
+    width: 50%;
+    height: 50px;
+    text-align: center;
+    border-radius: 30%;
+}
+
+.departretour {
+    margin-left: 10%;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 10%;
+}
+
+.nombrepersonne {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--navig);
+    text-align: center;
+    gap: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: var(--menunavigation);
+}
+
+.boutonrechercher {
+    position: relative;
+    left: 15%;
+    text-align: center;
+    width: 70%;
+    height: 3rem;
+    background-color: var(--couleurbouton);
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.nombre {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+}
+
+.depart {
+    text-align: center;
+
+}
+
+.retour {
+    text-align: center;
+
+
+}
+
+.suggestion {
+    text-align: center;
+    text-decoration: underline;
+}
+
+article img {
+    width: 100%;
+    height: 15rem;
+    border-style: ridge;
+    border-width: 5px;
+    transition: 1.5s;
+
+}
+
+article img:hover {
+    transform: scale(1.04);
+
+}
+
+.boxhotel {
+    background-color: var(--boxhotel);
+    margin: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 1%;
+}
+
+.hotel1 {
+    border-bottom: solid;
+    border-width: 2px;
+    text-align: center;
+
+}
+
+.hotel1>#hoteldroite {
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 10px;
+    margin: 2px;
+    align-items: center;
+}
+
+section article {
+    border-style: solid;
+    border-width: 2px;
+    text-align: center;
+    margin: 10px;
+    background-color: var(--fondhotel);
+}
+
+article p {
+    border-style: solid;
+    border-radius: 3%;
+    border-width: 1px;
+    background-color: var(--fonddescriphotel);
+    color: var(--desciphotel);
+    margin: 5px;
+    height: max-content;
+}
+
+.hotel2 {
+    border-bottom: solid;
+    border-width: 2px;
+    text-align: center;
+}
+
+.hotel2>#hotelgauche {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin: 2px;
+    align-items: center;
+}
+
+.imghotel2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+}
+.desc2{
+    width: 100%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+section h2 {
+    border-bottom: solid;
+    border-width: 2px;
+}
+
+.precedent,
+.suivant {
+    font-size: 1.3rem;
+    width: 10%;
+}
+
+.precedent img {
+    width: 100%;
+}
+
+.suivant img {
+    width: 100%;
+}
+
+.suivant {
+    background-image: url(img/suivant.svg);
+}
+
+.pages {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+#pages {
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+}
+
+.page {
+    font-size: 1.4rem;
+}
+
+#footer {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+}
+
+#footer a,
+#footer p {
+    position: relative;
+    top: 0.65rem;
+    color: white;
+    text-align: center;
+}
+
+/* pop-up co/ins */
+*,
+*::after *,
+*::before {
+    box-sizing: border-box;
+}
+
+.modal {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+    border-width: 4px;
+    border-radius: 10%;
+    overflow: hidden;
+    text-align: center;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.header-connexion {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: var(--fondnavbar);
+
+}
+
+.header-connexion .titre {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 25%;
+
+}
+
+.header-connexion .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.formulaire .id {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 2%;
+}
+
+.formulaire .inp {
+    display: block;
+    margin-left: 15%;
+    width: 70%;
+    height: 2.3rem;
+    border-radius: 10%;
+}
+
+#fondsombre {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+    z-index: 5;
+}
+
+#fondsombre.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.boutonconnexion {
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    position: relative;
+    width: 70%;
+    height: 3rem;
+    background-color: var(--couleurbouton);
+
+
+}
+
+.header-inscription {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+    background-color: var(--fondnavbar);
+
+}
+
+.header-inscription .titre {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 30%;
+}
+
+.header-inscription .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.formulaire {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.formulaire .id {
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 2%;
+}
+
+.formulaire .inp {
+    display: block;
+    margin-left: 15%;
+    width: 70%;
+    height: 2.3rem;
+    border-radius: 10%;
+}
+
+#fondsombre {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+    z-index: 5;
+}
+
+#fondsombre.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#inscription {
+    text-align: center;
+}
+
+.boutoninscription {
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    position: relative;
+    width: 70%;
+    height: 3rem;
+    background-color: var(--couleurbouton);
+}
+
+.reservbouton {
+    background-color: rgba(0, 0, 0, 0.555);
+    border-radius: 10%;
+    cursor: pointer;
+
+}
+
+.reserv {
+    color: white;
+    font-size: 1.1rem;
+}
+
+#topbtn {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    z-index: 100;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: white;
+}
+
+/*  */
+/* pages avis*/
+.avissite {
+    margin: 5%;
+    border-style: solid;
+    text-align: center;
+
+}
+
+.boxavis {
+    text-align: center;
+    background-color: var(--fondhotel);
+}
+
+.titreavis {
+    margin-top: 0px;
+    font-size: 2rem;
+    border-bottom: solid;
+    border-width: 2px;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    background-color: var(--menunavigation);
+}
+
+.avis {
+    padding: 5px;
+    margin-bottom: 1.5rem;
+    resize: none;
+}
+
+.buttavis {
+    background-color: var(--couleurbouton);
+    margin-bottom: 0.5rem;
+    width: 10rem;
+    height: 2.5rem;
+}
+
+.avishotel {
+    margin: 5%;
+    border-style: solid;
+    text-align: center;
+}
+
+.titreavishotel {
+    margin-top: 0px;
+    font-size: 2rem;
+    border-bottom: solid;
+    border-width: 2px;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    background-color: var(--menunavigation);
+}
+
+.boxavishotel {
+    background-color: var(--fondhotel);
+    border: solid;
+    border-width: 0;
+}
+
+#avishotel {
+    padding: 1.2rem;
+    background: none;
+    border: none;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    article img {
+        width: 100%;
+        margin: auto;
+    }
+
+    article {
+        font-size: 1.2rem;
+    }
+
+    .departretour {
+        margin-left: 5%;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        gap: 50px;
+    }
+
+    /* burger */
+    .navbar-links {
+        top: 3.4rem;
+    }
+
+    /* fin burger */
+    .header-connexion .titre {
+        margin-left: 35%;
+    }
+
+    .header-inscription .titre {
+        margin-left: 40%;
+    }
+
+    .avissite,
+    .avishotel {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+@media screen and (min-width: 1360px) {
+
+    /* navbar */
+    .logo {
+        width: 6rem;
+    }
+
+    ul {
+        justify-content: right;
+        list-style: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+
+
+    }
+
+    .navbar-link {
+        display: flex;
+
+    }
+
+    .show-nav .navbar-links {
+        position: static;
+        border: none;
+        background: none;
+        border-radius: 0;
+    }
+
+    .navbar-links {
+        position: static;
+        display: flex;
+        width: unset;
+        flex-direction: row;
+        border-radius: initial;
+        transition: none;
+        background-color: unset;
+
+    }
+
+    .navbar-link a {
+        text-decoration: none;
+        border: unset;
+        background-color: unset;
+        padding: 1.5rem;
+        margin: 0;
+        font-size: 1.5rem;
+    }
+
+    .navbar-link>a::after {
+        display: block;
+        content: "";
+        width: 0;
+        height: 2px;
+        background-color: black;
+        transition: width 1s;
+    }
+
+    .navbar-link:hover>a::after {
+        width: 100%;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .barre {
+        display: none;
+    }
+
+    .navbar-titre {
+        margin-left: 20%;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    /* fin navbar */
+    body {
+        background-size: cover;
+    }
+
+    main {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .departretour {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        gap: 50px;
+    }
+
+    article img {
+        width: 20rem;
+        height: 20rem;
+        margin: auto;
+    }
+
+    .menurecherche {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .hotel1 {
+        border-bottom: solid;
+        border-width: 2px;
+        text-align: center;
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .hotel2 {
+        border-bottom: solid;
+        border-width: 2px;
+        text-align: center;
+        margin-top: 5%;
+        margin-left: 10%;
+        margin-right: 10%
+    }
+
+    div p {
+        font-size: 1.5rem;
+    }
+
+    .avissite {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    main {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .departretour {
+        margin-left: 10%;
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 40% 40%;
+        gap: 50px;
+    }
+
+    article img {
+        width: 30rem;
+        height: 30rem;
+        margin: auto;
+    }
+
+    div p {
+
+        font-size: 2rem;
+    }
+
+    /* navbar */
+    .navbar-titre {
+        text-align: center;
+    }
+
+    .navbar-link a {
+        font-size: 2rem;
+    }
+
+    .hotel {
+        font-size: 5rem;
+    }
+
+    .avissite {
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+}
+
+/* fin navbar */

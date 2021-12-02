@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avis</title>
+    <script src="../js/fonction.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <input type="image" src="../img/upbutton.svg" id="topbtn" width="40rem">
+    <nav class="navbar" role="navigation">
+        <a href="../index.html"><img class="logo" src="../img/filetofish.svg" alt="logo hotel"></a>
+        <div class="navbar-titre">
+            SAUMHOTEL</div>
+        <ul class="navbar-links">
+            <li class="navbar-link"><a href="#">Avis</a></li>
+            <li class="navbar-link"><a href="#" data-modal-target="#connexion">Me connecter</a>
+            </li>
+            <li class="navbar-link"><a href="#" data-modal-target="#inscription">M'inscrire</a></li>
+        </ul>
+        <button class="burger">
+            <span class="barre"></span>
+        </button>
+    </nav>
+    <article class="avissite">
+        <div class="boxavis">
+            <h1 class="titreavis">Votre avis sur notre site</h1>
+            <h2 class="soustitre">Qu'en pensez-vous ?</h2>
+            <textarea class="avis" name="avis" id="avis" cols="30" rows="10"></textarea>
+            <br>
+            <input class="buttavis" type="button" value="Envoyer votre avis">
+        </div>
+    </article>
+    <h1 class="hotel">Avis sur l'Hotel</h1>
+    <article class="avishotel">
+        <div class="boxavishotel">
+            <h1 class="titreavishotel">Hotel</h1>
+            <h2 class="soustitrehotel">Nom Prenom</h2>
+            <p id="avishotel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae esse, omnis odio officia
+                error possimus, nulla perferendis, placeat accusantium iure enim cum suscipit nihil nemo dolores!
+                Repellendus eos harum aspernatur.
+            </p>
+        </div>
+    </article>
+    <article class="avishotel">
+        <div class="boxavishotel">
+            <h1 class="titreavishotel">Hotel</h1>
+            <h2 class="soustitrehotel">Nom Prenom</h2>
+            <p id="avishotel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae esse, omnis odio officia
+                error possimus, nulla perferendis, placeat accusantium iure enim cum suscipit nihil nemo dolores!
+                Repellendus eos harum aspernatur.
+            </p>
+        </div>
+    </article>
+    <article class="avishotel">
+        <div class="boxavishotel">
+            <h1 class="titreavishotel">Hotel</h1>
+            <h2 class="soustitrehotel">Nom Prenom</h2>
+            <p id="avishotel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae esse, omnis odio officia
+                error possimus, nulla perferendis, placeat accusantium iure enim cum suscipit nihil nemo dolores!
+                Repellendus eos harum aspernatur.
+            </p>
+        </div>
+    </article>
+    <article class="avishotel">
+        <div class="boxavishotel">
+            <h1 class="titreavishotel">Hotel</h1>
+            <h2 class="soustitrehotel">Nom Prenom</h2>
+            <p id="avishotel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae esse, omnis odio officia
+                error possimus, nulla perferendis, placeat accusantium iure enim cum suscipit nihil nemo dolores!
+                Repellendus eos harum aspernatur.
+            </p>
+        </div>
+    </article>
+    <article class="avishotel">
+        <div class="boxavishotel">
+            <h1 class="titreavishotel">Hotel</h1>
+            <h2 class="soustitrehotel">Nom Prenom</h2>
+            <p id="avishotel">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae esse, omnis odio officia
+                error possimus, nulla perferendis, placeat accusantium iure enim cum suscipit nihil nemo dolores!
+                Repellendus eos harum aspernatur.
+            </p>
+        </div>
+    </article>
+    <footer id="footer">
+        <a href="../html/mentions.html">Mentions Légales</a>
+        <p>Sites sous &copy de Mehdi & Guy</p>
+    </footer>
+    <!-- pop-up co/ins -->
+    <div class="modal" id="connexion">
+        <div class="header-connexion">
+            <div class="titre">Me connecter</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <form class="formulaire" action="formulaire">
+            <label class="id" for="identifiant">Identifiant</label>
+            <input class="inp" type="text" id="identifiant" name="identifiant">
+
+            <label class="id" for="motdepasse">Mot de passe</label>
+            <input class="inp" type="text" id="motdepasse" name="motdepasse">
+        </form>
+        <a href="#" data-modal-target="#inscription" class="compte">Pas encore de compte ? Cliquez-ici</a>
+        <button class="boutonconnexion">Me connecter</button>
+    </div>
+    <div id="fondsombre"></div>
+    <div class="modal" id="inscription">
+        <div class="header-inscription">
+            <div class="titre">Inscription</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <form class="formulaire" action="formulaire">
+            <label class="id" for="identifiant">Identifiant</label>
+            <input class="inp" type="text" id="identifiant" name="identifiant">
+
+            <label class="id" for="Nom">Nom</label>
+            <input class="inp" type="text" id="Nom" name="Nom">
+
+            <label class="id" for="Prenom">Prenom</label>
+            <input class="inp" type="text" id="Prenom" name="Prenom">
+
+            <label class="id" for="Adressemail">Adresse Email</label>
+            <input class="inp" type="text" id="Adresse" name="Adresse">
+
+            <label class="id" for="motdepasse">Mot de passe</label>
+            <input class="inp" type="text" id="motdepasse" name="motdepasse">
+
+            <label class="id" for="Comfirmation">Confirmez votre mot de passe</label>
+            <input class="inp" type="text" id="Confirmation" name="Confirmation">
+        </form>
+        <a href="#" data-modal-target="#connexion" class="compte">Déja un compte ? Connecter vous !</a>
+        <button class="boutoninscription">M'inscrire</button>
+    </div>
+    <div id="fondsombre"></div>
+    <!--  -->
+</body>
+
+</html>

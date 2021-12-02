@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Softel</title>
+    <script src="js/fonction.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <a href="#top">
+        <input type="image" src="../img/upbutton.svg" id="topbtn" width="40rem">
+    </a>
+    <nav class="navbar" role="navigation">
+        <a href="index.html"><img class="logo" src="img/filetofish.svg" alt="logo hotel"></a>
+        <div class="navbar-titre">
+            SAUMHOTEL</div>
+        <ul class="navbar-links">
+            <li class="navbar-link"><a href="html/avis.html">Avis</a></li>
+            <li class="navbar-link"><a href="#" data-modal-target="#connexion">Me connecter</a>
+            </li>
+            <li class="navbar-link"><a href="#" data-modal-target="#inscription">M'inscrire</a></li>
+        </ul>
+        <button class="burger">
+            <span class="barre"></span>
+        </button>
+    </nav>
+    <main>
+        <h1 class="destination">Rechercher votre destination</h1>
+        <section class="menurecherche">
+            <h2 class="choix">Choisissez votre Destination</h2>
+            <form class="formulaire" action="submit" method="get">
+                <div class="barrerecherchedestination">
+                    <label class="destination">
+                        <input id="recherche" type="text" name="recherche" placeholder="Où souhaiter vous allez ?"
+                            data-compenent="recherche/destination">
+                    </label>
+                </div>
+                <div class="departretour">
+                    <div class="depart">
+                        <h3>Départ:</h3><input type="date" name="depart" id="depart">
+                    </div>
+                    <div class="retour">
+                        <h3>Retour:</h3><input type="date" name="depart" id="depart">
+                    </div>
+                </div>
+                <div class="nombrepersonne">
+                    <label for="quantité">Adulte(s)</label>
+                    <input class="nombre" type="number" id="quantité" name="adultes" min="0" max="" value="0">
+                    <label for="quantité">Enfant(s)</label>
+                    <input class="nombre" type="number" id="quantité" name="enfants" min="0" max="" value="0">
+                    <label for="quantité">Chambres</label>
+                    <input class="nombre" type="number" id="quantité" name="Chambres" min="0" max="5" value="0">
+                </div>
+                <button class="boutonrechercher">Rechercher</button>
+            </form>
+        </section>
+        <h1 class="suggestion">Suggestion :</h1>
+        <section class="boxhotel">
+            <article class="hotel1">
+                <h2 id="hotel1">Sotetsu Fresa, Kyobashi</h2>
+                <div id="hoteldroite">
+                    <img class="imghotel1" src="img/Hotel1.jpg" alt="Sotetsu Fresa">
+                    <p class="desc1">Ouvert en 2011, le Sotetsu Fresa Inn Tokyo-Kyobashi vous accueille à moins de 2
+                        minutes de marche de 2 stations de métro et à 10 minutes à pied du quartier de Ginza. Les
+                        chambres modernes sont équipées de lits Sealy et d'une télévision à écran LCD avec système de
+                        vidéos à la demande (VOD). La connexion Wi-Fi est gratuite dans l'ensemble des locaux. </p>
+                    <button class="reservbouton"><a class="reserv" href="./html/details.html"> Reservez maintenant
+                            !</a></button>
+                    <p class="prix">120€/Nuit</p>
+                </div>
+
+
+                </div>
+            </article>
+            <article class="hotel2">
+                <h2 id="hotel2">Monterey Ginza</h2>
+                <div id="hotelgauche">
+                    <img class="imghotel2" src="img/Hotel2.jpg" alt="Monterey Ginza">
+                    <p class="desc2">L’Hotel Monterey Ginza est situé à 1 minute à pied de la station de métro
+                        Ginza-Itchome et à 6 minutes de marche de la gare JR Yurakucho. Il propose un restaurant
+                        français ainsi que des chambres de style occidental, dotées d’une connexion Internet par câble
+                        haut débit gratuite.</p>
+                    <p class="prix">95€/Nuit</p>
+                    <button class="reservbouton"><a class="reserv" href="./html/details.html"> Reservez maintenant
+                            !</a></button>
+                </div>
+            </article>
+            <article class="hotel1">
+                <h2 id="hotel1">Super Hotel Lohas Akasaka</h2>
+                <div id="hoteldroite">
+                    <img class="imghotel1" src="img/hotel3.jpg" alt="Super ho* Lohas Akasaka">
+                    <p class="desc1">Ouvert en mars 2015, le Super Hotel Lohas Akasaka bénéficie d’un emplacement
+                        privilégié dans le centre de Tokyo, à seulement 4 minutes à pied de la station de métro Akasaka.
+                        Cet établissement non-fumeurs dispose d’un bain public spacieux et d’une connexion Wi-Fi
+                        gratuite.</p>
+                    <button class="reservbouton"><a class="reserv" href="./html/details.html"> Reservez maintenant
+                            !</a></button>
+                    <p class="prix">110€/Nuit</p>
+                </div>
+            </article>
+            </div>
+            <article class="hotel2">
+                <h2 id="hotel2">Sotetsu Fresa, Kanda</h2>
+                <div id="hotelgauche">
+                    <img class="imghotel2" src="img/Hotel4.jpg" alt="Sotetsu Fresa0">
+                    <p class="desc2">Le Sotetsu Fresa Inn Tokyo Kanda propose un hébergement à Tokyo, à 18 minutes à
+                        pied du bâtiment Marunouchi.Cet hôtel économique comprend des chambres équipées d'un bureau,
+                        d'une télévision à écran plat et d'un réfrigérateur.Un petit-déjeuner buffet est servi sur
+                        place.</p>
+                    <p class="prix">110€/Nuit</p>
+                    <button class="reservbouton"><a class="reserv" href="./html/details.html"> Reservez maintenant
+                            !</a></button>
+                </div>
+            </article>
+            <article class="hotel1">
+                <h2 id="hotel1">Shinigawa Prince Hotel</h2>
+                <div id="hoteldroite">
+                    <img class="imghotel1" src="img/Hotel5.jpg" alt="Shinigawa Prince Hotel">
+                    <p class="desc1">Doté de 15 restaurants et bars, de 2 piscines et d'un aquarium, l'établissement
+                        Shinagawa Prince Hotel se situe à côté de la gare JR de Shinagawa, depuis laquelle vous pourrez
+                        rejoindre l'aéroport international de Tokyo-Haneda en seulement 25 minutes. Offrant une vue
+                        imprenable sur Tokyo, cet hôtel de 39 étages propose une connexion Wi-Fi accessible dans
+                        l'ensemble de ses locaux.</p>
+                    <button class="reservbouton"><a class="reserv" href="./html/details.html"> Reservez maintenant
+                            !</a></button>
+                    <p class="prix">180€/Nuit</p>
+                </div>
+
+                </div>
+            </article>
+            <article class="hotel2">
+                <h2 class="hotel2">Best Western Hotel</h2>
+                <div id="hotelgauche">
+                    <img class="imghotel2" src="img/Hotel6.jpg" alt="Best Western Hotel">
+                    <p class="desc2">Le Best Western Hotel bénéficie d'un bel emplacement dans le quartier de Taito, à
+                        Tokyo, à 300 mètres du centre de conventions AP Akihabara, et à 500 mètres du sanctuaire
+                        Kamezumi Inari et du centre commercial Fujisoft Akiba Plaza.</p>
+                    <p class="prix">100€/Nuit</p>
+                    <button class="reservbouton"><a class="reserv" href="./html/details.html"> Reservez maintenant
+                            !</a></button>
+                </div>
+            </article>
+        </section>
+        <div class="pages">
+            <a class="precedent" href=""><img src="img/precedent.svg" alt="precedent"></a>
+            <div id="pages">
+                <a class="page" href="#">1</a>
+                <a class="page" href="#">2</a>
+                <a class="page" href="#">3</a>
+                <a class="page" href="#">4</a>
+                <a class="page" href="#">5</a>
+            </div>
+            <a class="suivant" href=""><img src="img/suivant.svg" alt="suivant"></a>
+        </div>
+    </main>
+    <footer id="footer">
+        <a href="./html/mentions.html">Mentions Légales</a>
+        <p>Sites sous &copy de Mehdi & Guy</p>
+
+    </footer>
+    <!-- pop-up co/ins -->
+    <div class="modal" id="connexion">
+        <div class="header-connexion">
+            <div class="titre">Me connecter</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <form class="formulaire" action="formulaire">
+            <label class="id" for="identifiant">Identifiant</label>
+            <input class="inp" type="text" id="identifiant" name="identifiant">
+
+            <label class="id" for="motdepasse">Mot de passe</label>
+            <input class="inp" type="text" id="motdepasse" name="motdepasse">
+        </form>
+        <a href="#" data-modal-target="#inscription" class="compte">Pas encore de compte ? Cliquez-ici</a>
+        <button class="boutonconnexion">Me connecter</button>
+    </div>
+    <div id="fondsombre"></div>
+    <div class="modal" id="inscription">
+        <div class="header-inscription">
+            <div class="titre">Inscription</div>
+            <button data-close-button class="close-button">&times;</button>
+        </div>
+        <form class="formulaire" action="formulaire">
+            <label class="id" for="identifiant">Identifiant</label>
+            <input class="inp" type="text" id="identifiant" name="identifiant">
+
+            <label class="id" for="Nom">Nom</label>
+            <input class="inp" type="text" id="Nom" name="Nom">
+
+            <label class="id" for="Prenom">Prenom</label>
+            <input class="inp" type="text" id="Prenom" name="Prenom">
+
+            <label class="id" for="Adressemail">Adresse Email</label>
+            <input class="inp" type="text" id="Adresse" name="Adresse">
+
+            <label class="id" for="motdepasse">Mot de passe</label>
+            <input class="inp" type="text" id="motdepasse" name="motdepasse">
+
+            <label class="id" for="Comfirmation">Confirmez votre mot de passe</label>
+            <input class="inp" type="text" id="Confirmation" name="Confirmation">
+        </form>
+        <a href="#" data-modal-target="#connexion" class="compte">Déja un compte ? Connecter vous !</a>
+        <button class="boutoninscription">M'inscrire</button>
+    </div>
+    <div id="fondsombre"></div>
+    <!--  -->
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="97mm"
+   height="50mm"
+   viewBox="0 0 97 50"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="suivant.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.46324355"
+     inkscape:cx="318.40702"
+     inkscape:cy="387.48516"
+     inkscape:window-width="1366"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     width="91mm" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Calque 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:0.971154;fill:#000000;stroke-width:3.18804;stroke-linecap:round;stroke-linejoin:round;paint-order:stroke markers fill"
+       id="rect1081"
+       width="52.717907"
+       height="18.848076"
+       x="2.684006"
+       y="16.563465" />
+    <path
+       sodipodi:type="star"
+       style="fill:#000000;fill-rule:evenodd"
+       id="path1127"
+       inkscape:flatsided="true"
+       sodipodi:sides="3"
+       sodipodi:cx="-34.539066"
+       sodipodi:cy="-6.4760752"
+       sodipodi:r1="142.47365"
+       sodipodi:r2="71.236824"
+       sodipodi:arg1="3.1415927"
+       sodipodi:arg2="4.1887902"
+       inkscape:rounded="0"
+       inkscape:randomized="0"
+       d="M -177.01271,-6.4760818 36.697763,-129.86187 l -1.1e-5,246.7716 z"
+       transform="matrix(-0.20311424,3.1335268e-4,-3.010628e-4,-0.19514798,62.245501,23.765448)"
+       inkscape:transform-center-x="-7.2160352"
+       inkscape:transform-center-y="0.022322516" />
+  </g>
+</svg>

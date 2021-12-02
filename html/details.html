@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/script.js" defer></script>
+    <link rel="stylesheet" href="../css/details.css">
+    <title>details</title>
+</head>
+
+<header>
+    <nav class="navbar" role="navigation">
+        <div class="navbar-titre">
+            <a href="../index.html">
+                <img src="../img/filetofish.svg" alt="logo_hotel" class="logo" width="100%">
+            </a>
+            <p>SAUMHOTEL</p>
+        </div>
+        <ul class="navbar-links">
+            <li class="navbar-link"> <a href="index.html">Avis</a></li>
+            <li class="navbar-link"> <a href="experience.html">Me connecter</a></li>
+            <li class="navbar-link"> <a href="https://github.com/Mehdirps">M'inscrire</a></li>
+        </ul>
+        <button class="burger">
+            <span class="barre"></span>
+        </button>
+    </nav>
+</header>
+
+<body>
+    <main>
+        <h1 class="nomhotel">Suppôtel</h1>
+        <input type="image" src="../img/upbutton.svg" id="topbtn" width="40rem">
+        <section>
+            <h2 class="titre">Nos locaux</h2>
+            <div class="diapo">
+                <div class="elements">
+                    <div class="element active">
+                        <img src="../img/Hotel1.jpg" alt="Image 1">
+                    </div>
+                    <div class="element">
+                        <img src="../img/Hotel2.jpg" alt="Image 2">
+                    </div>
+                    <div class="element">
+                        <img src="../img/Hotel3.jpg" alt="Image 3">
+                    </div>
+                </div>
+                <i id="nav-gauche" class="las la-chevron-left">&lt;</i>
+                <i id="nav-droite" class="las la-chevron-right">&gt;</i>
+                <h1 class="titre">Description</h2>
+                    <div class="txtdescript">
+                        <p>Voici une description qui défonce d'un hôtel super cool que je ne saurais mieux vous vendre
+                            qu'en
+                            disant
+                            qu'il est bien, j'te jure mon cousin il y est allé et ça gère la fougère. Ouai j'fais du
+                            remplissage
+                            parce
+                            que j'ai pas envie d'avoir un lorem super long mais un texte débile et rigolo ehehehe.</p>
+                    </div>
+        </section>
+
+        <div class="reserv">
+            <h2 class="titre">Réserver une chambre</h2>
+            <div>
+                <div class="wrapper">
+                    <div class="one">
+                        <form action="submit" method="get" class="dpt">Départ : <input type="date"></form>
+                    </div>
+                    <div class="two">
+                        <form action="submit" method="get" class="ret">Retour : <input type="date"></form>
+                    </div>
+                </div>
+                <div class="flexwrapper">
+                    <div class="case">
+                        <label for="quantity">Adulte(s) : </label>
+                        <input type="number" id="aquantity" name="adlt" min="0" max="5" value="0">
+                    </div>
+                    <div class="case">
+                        <label for="quantity">Enfant(s) : </label>
+                        <input type="number" id="equantity" name="efnt" min="0" max="5" value="0">
+                    </div>
+                    <div class="case">
+                        <label for="quantity">Chambre(s) : </label>
+                        <input type="number" id="cquantity" name="chbr" min="0" max="5" value="0">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="avis">
+            <h2 class="titre">Avis sur l'hôtel</h2>
+            <div class="wrapper">
+                <div class="one">
+                    M.Descroix
+                </div>
+                <div class="two">
+                    20/20
+                </div>
+            </div>
+            <div class="flexwrapper">
+                <div class="case">
+                    Hôtel d'excellente qualité, un staff à l'écoute, un groom service qui répond dans la seconde, un
+                    accueil plus que chaleureux lors de l'arrivée. Le barman fait des verres ultra qualitatif et la j'ai
+                    plus grand chose à dire pour étendre la zone de texte et voir si j'peux pas casser mon code et
+                    provoquer un bug qui va me faire gueuler en brésilien tellement j'vais être gavé.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <a href="mentions.html">Mentions Légales</a>
+        <p>Sites sous &copy de Mehdi & Guy</p>
+    </footer>
+</body>
+
+</html>
